@@ -1,0 +1,15 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Path
+Target = usr/src/*/dkms.conf
+Target = usr/lib/modules/*/build/include/
+Target = usr/lib/modules/*/modules.alias
+
+[Action]
+Description = Checking if we need to add config for Nvidia
+Depends = dkms
+When = PostTransaction
+Exec = /usr/local/bin/arcolinux-nvidia-drm-wayland
+NeedsTargets
