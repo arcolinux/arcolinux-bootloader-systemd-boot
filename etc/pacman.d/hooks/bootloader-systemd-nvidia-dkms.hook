@@ -14,4 +14,3 @@ Description = Checking if we need to add config for Nvidia
 Depends = dkms
 When = PostTransaction
 Exec = /usr/local/bin/arcolinux-nvidia-drm-wayland
-NeedsTargets
