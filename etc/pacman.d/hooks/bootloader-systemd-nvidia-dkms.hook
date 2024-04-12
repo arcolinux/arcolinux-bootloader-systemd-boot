@@ -6,6 +6,8 @@ Type = Path
 Target = usr/src/*/dkms.conf
 Target = usr/lib/modules/*/build/include/
 Target = usr/lib/modules/*/modules.alias
+Target = usr/lib/modules/*/vmlinuz
+Target = usr/lib/modules/*/extramodules/*
 
 [Action]
 Description = Checking if we need to add config for Nvidia
